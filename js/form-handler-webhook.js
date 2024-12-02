@@ -60,14 +60,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 console.log('Webhook response status:', response.status);
                 
                 if (response.ok) {
-                    console.log('Submission successful');
-                    formStatus.innerHTML = `
-                        <div class="success-message">
-                            <h3>Application Submitted Successfully!</h3>
-                            <p>Thank you for applying to join APASA. We will review your application and contact you soon.</p>
-                        </div>
-                    `;
-                    form.reset();
+                    console.log('Form submitted successfully');
+                    
+                    // Hide the form and show the acknowledgment section
+                    form.style.display = 'none';
+                    document.getElementById('acknowledgmentSection').classList.remove('hidden');
+                    
+                    // Scroll to the acknowledgment section
+                    document.getElementById('acknowledgmentSection').scrollIntoView({ behavior: 'smooth' });
                 } else {
                     throw new Error('Submission failed');
                 }

@@ -15,6 +15,34 @@
     
     <!-- Styles -->
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .hidden {
+            display: none;
+        }
+        .acknowledgment-section {
+            text-align: center;
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 800px;
+        }
+        .acknowledgment-section h2 {
+            color: #4CAF50;
+            margin-bottom: 1rem;
+        }
+        .finish-btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 2rem;
+            transition: background-color 0.3s;
+        }
+        .finish-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
     <!-- Header -->
@@ -182,6 +210,15 @@
                     </div>
                 </form>
             </div>
+        </section>
+
+        <!-- Acknowledgment Section (Initially Hidden) -->
+        <section id="acknowledgmentSection" class="section acknowledgment-section hidden">
+            <h2>Application Submitted Successfully!</h2>
+            <p>Thank you for submitting your membership application to APASA.</p>
+            <p>Your application is now under review. Our team will carefully evaluate your submission and get back to you within 48 hours.</p>
+            <p>Please check your email for further communications from our team.</p>
+            <a href="index.html" class="finish-btn">Finish</a>
         </section>
 
         <!-- Application Process -->
