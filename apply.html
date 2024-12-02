@@ -49,7 +49,7 @@
         <section class="section">
             <h2 class="section-title">Apply for Membership</h2>
             <div class="application-form-wrapper">
-                <form id="membershipForm" class="application-form">
+                <form id="applicationForm" class="application-form">
                     <!-- Organization Details -->
                     <div class="form-section">
                         <h3>Organization Details</h3>
@@ -176,11 +176,9 @@
                             <input type="checkbox" id="privacyPolicy" name="privacyPolicy" required>
                             <label for="privacyPolicy">I have read and accept the privacy policy *</label>
                         </div>
-                    </div>
-
-                    <!-- Submit Button -->
-                    <div class="form-section">
-                        <button type="submit" class="btn btn-primary">Submit Application</button>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary" id="submitApplication">Submit Application</button>
+                        </div>
                     </div>
                 </form>
             </div>
@@ -242,5 +240,6 @@
 
     <!-- Scripts -->
     <script src="js/script.js"></script>
+    <script src="js/form-handler-webhook.js"></script>
 </body>
 </html>
