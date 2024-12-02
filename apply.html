@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply for Membership - APASA</title>
+    <meta name="description" content="Apply for APASA membership online. Join South Africa's leading accommodation providers association.">
+    <meta name="keywords" content="APASA membership application, join APASA, accommodation provider membership">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo-link">
+                <img src="images/logo.svg" alt="APASA Logo" class="logo">
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="membership.html" class="nav-link">Membership</a></li>
+                <li><a href="insights.html" class="nav-link">Insights</a></li>
+                <li><a href="events.html" class="nav-link">Events</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn">Menu</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Membership Application</h1>
+            <p>Join South Africa's premier accommodation providers network</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Application Form -->
+        <section class="section">
+            <h2 class="section-title">Apply for Membership</h2>
+            <div class="application-form-wrapper">
+                <form id="membershipForm" class="application-form">
+                    <!-- Organization Details -->
+                    <div class="form-section">
+                        <h3>Organization Details</h3>
+                        <div class="form-group">
+                            <label for="businessName" class="form-label">Business/Organization Name *</label>
+                            <input type="text" id="businessName" name="businessName" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="registrationNumber" class="form-label">Company Registration Number *</label>
+                            <input type="text" id="registrationNumber" name="registrationNumber" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="vatNumber" class="form-label">VAT Number (if applicable)</label>
+                            <input type="text" id="vatNumber" name="vatNumber" class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="businessType" class="form-label">Type of Business *</label>
+                            <select id="businessType" name="businessType" class="form-input" required>
+                                <option value="">Select business type</option>
+                                <option value="hotel">Hotel</option>
+                                <option value="guesthouse">Guesthouse</option>
+                                <option value="bnb">Bed & Breakfast</option>
+                                <option value="apartment">Apartment Complex</option>
+                                <option value="student">Student Accommodation</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Contact Person Details -->
+                    <div class="form-section">
+                        <h3>Primary Contact Person</h3>
+                        <div class="form-group">
+                            <label for="contactName" class="form-label">Full Name *</label>
+                            <input type="text" id="contactName" name="contactName" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="position" class="form-label">Position in Organization *</label>
+                            <input type="text" id="position" name="position" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address *</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" class="form-input" required>
+                        </div>
+                    </div>
+
+                    <!-- Property Details -->
+                    <div class="form-section">
+                        <h3>Property Details</h3>
+                        <div class="form-group">
+                            <label for="propertyAddress" class="form-label">Physical Address *</label>
+                            <textarea id="propertyAddress" name="propertyAddress" class="form-input" rows="3" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="province" class="form-label">Province *</label>
+                            <select id="province" name="province" class="form-input" required>
+                                <option value="">Select province</option>
+                                <option value="gauteng">Gauteng</option>
+                                <option value="western-cape">Western Cape</option>
+                                <option value="kwazulu-natal">KwaZulu-Natal</option>
+                                <option value="eastern-cape">Eastern Cape</option>
+                                <option value="free-state">Free State</option>
+                                <option value="limpopo">Limpopo</option>
+                                <option value="mpumalanga">Mpumalanga</option>
+                                <option value="north-west">North West</option>
+                                <option value="northern-cape">Northern Cape</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="numberOfUnits" class="form-label">Number of Accommodation Units *</label>
+                            <input type="number" id="numberOfUnits" name="numberOfUnits" class="form-input" required>
+                        </div>
+                    </div>
+
+                    <!-- Membership Type -->
+                    <div class="form-section">
+                        <h3>Membership Selection</h3>
+                        <div class="form-group">
+                            <label for="membershipType" class="form-label">Membership Type *</label>
+                            <select id="membershipType" name="membershipType" class="form-input" required>
+                                <option value="">Select membership type</option>
+                                <option value="standard">Standard Member (R2,500/year)</option>
+                                <option value="premium">Premium Member (R5,000/year)</option>
+                                <option value="corporate">Corporate Member (Custom Pricing)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Additional Information -->
+                    <div class="form-section">
+                        <h3>Additional Information</h3>
+                        <div class="form-group">
+                            <label for="yearsInBusiness" class="form-label">Years in Business *</label>
+                            <input type="number" id="yearsInBusiness" name="yearsInBusiness" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="referralSource" class="form-label">How did you hear about APASA?</label>
+                            <select id="referralSource" name="referralSource" class="form-input">
+                                <option value="">Select option</option>
+                                <option value="website">Website</option>
+                                <option value="event">Industry Event</option>
+                                <option value="referral">Member Referral</option>
+                                <option value="social">Social Media</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="comments" class="form-label">Additional Comments</label>
+                            <textarea id="comments" name="comments" class="form-input" rows="4"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Terms and Conditions -->
+                    <div class="form-section">
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="termsAccepted" name="termsAccepted" required>
+                            <label for="termsAccepted">I agree to APASA's terms and conditions *</label>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="privacyPolicy" name="privacyPolicy" required>
+                            <label for="privacyPolicy">I have read and accept the privacy policy *</label>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="form-section">
+                        <button type="submit" class="btn btn-primary">Submit Application</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Application Process -->
+        <section class="section">
+            <h2 class="section-title">What Happens Next?</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <h3>1. Submit Application</h3>
+                    <p>Complete and submit the online application form</p>
+                </div>
+                <div class="step">
+                    <h3>2. Review Process</h3>
+                    <p>Our team will review your application within 5 working days</p>
+                </div>
+                <div class="step">
+                    <h3>3. Payment</h3>
+                    <p>Upon approval, you'll receive payment instructions</p>
+                </div>
+                <div class="step">
+                    <h3>4. Welcome Pack</h3>
+                    <p>Access your member benefits and welcome materials</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@apasa.org.za</p>
+                <p>Phone: +27 (0) 11 123 4567</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" target="_blank">LinkedIn</a>
+                    <a href="#" target="_blank">Twitter</a>
+                    <a href="#" target="_blank">Facebook</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 APASA. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+</html>

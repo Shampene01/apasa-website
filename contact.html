@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - APASA</title>
+    <meta name="description" content="Get in touch with APASA for membership inquiries, support, or general questions about accommodation services in South Africa.">
+    <meta name="keywords" content="contact APASA, accommodation support, South Africa property association contact">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo-link">
+                <img src="images/logo.svg" alt="APASA Logo" class="logo">
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="membership.html" class="nav-link">Membership</a></li>
+                <li><a href="insights.html" class="nav-link">Insights</a></li>
+                <li><a href="events.html" class="nav-link">Events</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn">Menu</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Contact Us</h1>
+            <p>We're here to help and answer any questions you may have</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Contact Information -->
+        <section class="section contact-info">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-grid">
+                <div class="card contact-card">
+                    <h3>General Inquiries</h3>
+                    <p><strong>Email:</strong> info@apasa.org.za</p>
+                    <p><strong>Phone:</strong> +27 (0) 11 123 4567</p>
+                    <p><strong>Hours:</strong> Monday - Friday, 8:30 AM - 5:00 PM</p>
+                </div>
+                <div class="card contact-card">
+                    <h3>Membership Support</h3>
+                    <p><strong>Email:</strong> membership@apasa.org.za</p>
+                    <p><strong>Phone:</strong> +27 (0) 11 123 4568</p>
+                    <p><strong>Hours:</strong> Monday - Friday, 9:00 AM - 4:00 PM</p>
+                </div>
+                <div class="card contact-card">
+                    <h3>Media Inquiries</h3>
+                    <p><strong>Email:</strong> media@apasa.org.za</p>
+                    <p><strong>Phone:</strong> +27 (0) 11 123 4569</p>
+                    <p><strong>Hours:</strong> Monday - Friday, 9:00 AM - 5:00 PM</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="section">
+            <h2 class="section-title">Send Us a Message</h2>
+            <div class="contact-form-wrapper">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Full Name *</label>
+                        <input type="text" id="name" name="name" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email Address *</label>
+                        <input type="email" id="email" name="email" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Subject *</label>
+                        <select id="subject" name="subject" class="form-input" required>
+                            <option value="">Select a subject</option>
+                            <option value="membership">Membership Inquiry</option>
+                            <option value="support">General Support</option>
+                            <option value="events">Events Information</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message *</label>
+                        <textarea id="message" name="message" class="form-input" rows="5" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Office Location -->
+        <section class="section">
+            <h2 class="section-title">Our Office</h2>
+            <div class="location-wrapper">
+                <div class="location-info">
+                    <h3>APASA Head Office</h3>
+                    <p>123 Main Street</p>
+                    <p>Sandton</p>
+                    <p>Johannesburg, 2196</p>
+                    <p>South Africa</p>
+                </div>
+                <div class="map-container">
+                    <!-- Embed Google Maps here -->
+                    <div class="map-placeholder">
+                        <p>Map Loading...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="section">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="card faq-card">
+                    <h3>How do I become a member?</h3>
+                    <p>Visit our membership page to learn about the different membership options and application process.</p>
+                </div>
+                <div class="card faq-card">
+                    <h3>What are your response times?</h3>
+                    <p>We aim to respond to all inquiries within 24-48 business hours.</p>
+                </div>
+                <div class="card faq-card">
+                    <h3>Can I visit your office?</h3>
+                    <p>Yes, you can visit our office during business hours. We recommend scheduling an appointment first.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="section newsletter-section">
+            <h2 class="section-title">Stay Connected</h2>
+            <p>Subscribe to our newsletter for updates and industry news</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@apasa.org.za</p>
+                <p>Phone: +27 (0) 11 123 4567</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" target="_blank">LinkedIn</a>
+                    <a href="#" target="_blank">Twitter</a>
+                    <a href="#" target="_blank">Facebook</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 APASA. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+</html>
