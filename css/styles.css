@@ -41,11 +41,11 @@ body {
 }
 
 .logo {
-    height: 90px;  /* Increased from 80px, leaving 10px padding space */
-    width: auto;
+    width: 127px;  /* Set specific width as requested */
+    height: auto;  /* Allow height to scale proportionally */
     max-width: 100%;
     transition: transform 0.3s ease;
-    object-fit: contain;  /* Ensure logo maintains aspect ratio */
+    object-fit: contain;
 }
 
 .logo:hover {
