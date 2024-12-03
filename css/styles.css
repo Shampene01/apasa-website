@@ -692,16 +692,16 @@ body {
 
 /* Application Form Styles */
 .application-form-wrapper {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
     background: var(--white);
-    border-radius: 8px;
+    border-radius: 12px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .application-form .form-section {
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     padding-bottom: 2rem;
     border-bottom: 1px solid #eee;
 }
