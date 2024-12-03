@@ -83,7 +83,7 @@ body {
 
 /* Hero section */
 .hero {
-    background-image: url('/Users/mac/Documents/GitHub/apasa/apasa-website/images/hero-gradient.jpg');
+    background-image: url('../images/hero-gradient.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
