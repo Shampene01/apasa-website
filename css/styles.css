@@ -83,10 +83,30 @@ body {
 
 /* Hero section */
 .hero {
-    background-color: var(--primary-color);
+    background-image: url('/Users/mac/Documents/GitHub/apasa/apasa-website/images/hero-gradient.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: var(--white);
     padding: 8rem 2rem 4rem;
     text-align: center;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);  /* Adds a slight overlay to ensure text readability */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;  /* Ensures content stays above the overlay */
 }
 
 .hero h1 {
