@@ -41,14 +41,22 @@ body {
 }
 
 .logo {
-    height: 80px;
+    height: 90px;  /* Increased from 80px, leaving 10px padding space */
     width: auto;
     max-width: 100%;
     transition: transform 0.3s ease;
+    object-fit: contain;  /* Ensure logo maintains aspect ratio */
 }
 
 .logo:hover {
     transform: scale(1.05);
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 5px 0;  /* Add some vertical padding */
 }
 
 .mobile-menu-btn {
