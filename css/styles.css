@@ -108,13 +108,13 @@ body {
 }
 
 .section {
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
 }
 
 .section-title {
     font-size: 2rem;
     color: var(--primary-color);
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 /* Cards */
