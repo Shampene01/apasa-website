@@ -28,6 +28,7 @@ body {
     width: 100%;
     top: 0;
     z-index: 1000;
+    height: 100px;  /* Set explicit height for header */
 }
 
 .nav-container {
@@ -100,13 +101,14 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     color: var(--white);
-    min-height: 60vh;
+    min-height: calc(60vh - 100px);  /* Subtract header height */
     text-align: center;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    margin-top: 100px;  /* Add margin equal to header height */
 }
 
 .hero::after {
@@ -163,9 +165,17 @@ body {
 .hero-content {
     position: relative;
     z-index: 3;
-    padding: 2rem;
+    padding: 0 2rem;
     width: 100%;
+    max-width: 800px;  /* Limit the content width */
+    margin: 0 auto;    /* Center horizontally */
     animation: fadeIn 1s ease-out 0.5s both;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Center items horizontally */
+    justify-content: center;
+    min-height: inherit;
+    gap: 1.5rem;
 }
 
 @keyframes fadeIn {
@@ -181,13 +191,21 @@ body {
 
 .hero-content h1 {
     font-size: 3rem;
-    margin: 2rem 0;
+    margin: 0;
+    line-height: 1.2;
+    text-align: center;
 }
 
 .hero-content p {
     font-size: 1.2rem;
-    max-width: 800px;
-    margin: 0 auto;
+    margin: 0;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.hero-content .btn {
+    display: inline-block;  /* Reset display for button */
+    width: auto;           /* Allow button to size to content */
 }
 
 /* Main content */
