@@ -82,7 +82,18 @@ body {
 }
 
 /* Hero section */
-/* Default hero background */
+/* Hero Animations */
+@keyframes heroZoomFade {
+    0% {
+        opacity: 0;
+        transform: scale(1.1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
 .hero {
     background-image: url('../images/hero-gradient.jpg');
     background-size: cover;
@@ -95,33 +106,48 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    animation: heroZoomFade 1.5s ease-out forwards;
+    z-index: 1;
 }
 
 /* Page specific hero backgrounds */
-.home-page .hero {
+.home-page .hero::after {
     background-image: url('../images/hero-gradient.jpg');
 }
 
-.about-page .hero {
+.about-page .hero::after {
     background-image: url('../images/about-hero.jpg');
 }
 
-.blog-page .hero {
+.blog-page .hero::after {
     background-image: url('../images/blog-hero.jpg');
 }
 
-.events-page .hero {
+.events-page .hero::after {
     background-image: url('../images/events-hero.jpg');
 }
 
-.membership-page .hero {
+.membership-page .hero::after {
     background-image: url('../images/membership-hero.jpg');
 }
 
-.contact-page .hero {
+.contact-page .hero::after {
     background-image: url('../images/contact-hero.jpg');
 }
 
+/* Move the overlay to a higher z-index */
 .hero::before {
     content: '';
     position: absolute;
@@ -130,14 +156,27 @@ body {
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.3);
-    z-index: 1;
+    z-index: 2;
 }
 
+/* Ensure content stays on top */
 .hero-content {
     position: relative;
-    z-index: 2;
+    z-index: 3;
     padding: 2rem;
     width: 100%;
+    animation: fadeIn 1s ease-out 0.5s both;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .hero-content h1 {
@@ -445,17 +484,6 @@ body {
 }
 
 /* Animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 .animate-fade-in {
     animation: fadeIn 1s ease forwards;
 }
