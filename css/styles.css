@@ -131,8 +131,8 @@ body {
     background-image: url('../images/about-hero.jpg');
 }
 
-.blog-page .hero::after {
-    background-image: url('../images/blog-hero.jpg');
+.insights-page .hero::after {
+    background-image: url('../images/insights-hero.jpg');
 }
 
 .events-page .hero::after {
