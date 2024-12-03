@@ -497,8 +497,13 @@ body {
 .footer {
     background-color: var(--primary-color);
     color: var(--white);
-    padding: 4rem 2rem;
-    margin-top: 4rem;
+    padding: 2rem 0;
+    text-align: center;  /* Center all footer content */
+}
+
+.footer p {
+    margin: 0;
+    text-align: center;  /* Ensure paragraph text is centered */
 }
 
 .footer-content {
