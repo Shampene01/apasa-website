@@ -144,6 +144,14 @@ body {
     text-decoration: none;
     font-weight: 500;
     transition: background-color 0.3s ease;
+    margin-top: 2rem;
+}
+
+.hero-content .btn,
+.section .btn,
+.card .btn {
+    margin-top: 2.5rem;
+    display: inline-block;
 }
 
 .btn-primary {
