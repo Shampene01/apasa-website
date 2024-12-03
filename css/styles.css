@@ -82,15 +82,44 @@ body {
 }
 
 /* Hero section */
+/* Default hero background */
 .hero {
     background-image: url('../images/hero-gradient.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: var(--white);
-    padding: 8rem 2rem 4rem;
+    min-height: 60vh;
     text-align: center;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Page specific hero backgrounds */
+.home-page .hero {
+    background-image: url('../images/hero-gradient.jpg');
+}
+
+.about-page .hero {
+    background-image: url('../images/about-hero.jpg');
+}
+
+.blog-page .hero {
+    background-image: url('../images/blog-hero.jpg');
+}
+
+.events-page .hero {
+    background-image: url('../images/events-hero.jpg');
+}
+
+.membership-page .hero {
+    background-image: url('../images/membership-hero.jpg');
+}
+
+.contact-page .hero {
+    background-image: url('../images/contact-hero.jpg');
 }
 
 .hero::before {
@@ -100,21 +129,23 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.3);  /* Adds a slight overlay to ensure text readability */
+    background: rgba(0, 0, 0, 0.3);
     z-index: 1;
 }
 
 .hero-content {
     position: relative;
-    z-index: 2;  /* Ensures content stays above the overlay */
+    z-index: 2;
+    padding: 2rem;
+    width: 100%;
 }
 
-.hero h1 {
+.hero-content h1 {
     font-size: 3rem;
-    margin-bottom: 1rem;
+    margin: 2rem 0;
 }
 
-.hero p {
+.hero-content p {
     font-size: 1.2rem;
     max-width: 800px;
     margin: 0 auto;
