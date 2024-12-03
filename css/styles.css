@@ -497,21 +497,26 @@ body {
 .footer {
     background-color: var(--primary-color);
     color: var(--white);
-    padding: 2rem 0;
-    text-align: center;  /* Center all footer content */
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.footer-logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 1rem;
 }
 
 .footer p {
     margin: 0;
-    text-align: center;  /* Ensure paragraph text is centered */
-}
-
-.footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
+    text-align: center;
 }
 
 /* Animations */
